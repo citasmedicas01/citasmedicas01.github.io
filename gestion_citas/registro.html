@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Gestión de Citas Médicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Registro - Gestión de Citas Médicas</h1>
+    </header>
+
+    <section class="formulario contenedor">
+        <form action="registro.php" method="POST">
+            <fieldset>
+                <legend>Registro de Paciente</legend>
+
+                <!-- Campo oculto para establecer el tipo de usuario -->
+                <input type="hidden" name="tipoUsuario" value="paciente">
+
+                <!-- Comunes -->
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+
+                <!-- Campo solo para pacientes -->
+                <div class="campo">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
+
+                <button type="submit" class="button">Registrar</button>
+                <button type="button" class="button volver" onclick="window.location.href='index.html'">Volver al Inicio</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gestión de Citas Médicas</p>
+    </footer>
+</body>
+</html>

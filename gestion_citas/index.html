@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: none;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            position: relative;
+        }
+        .hero-content {
+            flex: 1;
+            max-width: 50%;
+            z-index: 2;
+        }
+        .hero-image {
+            flex: 1;
+            max-width: 50%;
+            height: 400px;
+            background: url('medico.jpg') no-repeat center center/contain;
+            background-size: contain;
+        }
+        .info-section {
+            background-color: #f0f4f8;
+            border: 1px solid #cbd5e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            color: #1a202c;
+        }
+
+        .info-section h2 {
+            color: #2c5282;
+            margin-bottom: 10px;
+        }
+
+        .info-section p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="titulo">MediBook</h1>
+    </header>
+
+    <!-- Navegación -->
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="agendar.php">Agendar Cita</a>
+            <a href="admin_pacientes.php">Pacientes</a>
+            <a href="admin_doctores.php">Doctores</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="registro.html" class="button">Registrar</a>
+            <a href="iniciar.html" class="button">Iniciar Sesión</a>
+            <a href="Manual de Usuario.pdf" class="button" download>Manual de Usuario</a>
+        </nav>
+    </div>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>¡Bienvenido a MediBook!</h1>
+            <h2>Gestión de Citas Médicas</h2>
+            <p style="font-size: 20px; color: #1e3a8a; margin-top: 10px;">
+                Bienvenido a MediBook, la plataforma que simplifica la gestión de citas médicas.
+                Regístrate y disfruta de un sistema completo para controlar tus citas, gestionar información de pacientes
+                y seguir tratamientos de forma eficiente.
+            </p>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- Secciones informativas -->
+    <section class="info-section">
+        <h2>Acerca de MediBook</h2>
+        <p>Descubre cómo MediBook está revolucionando la forma en que se gestionan las citas médicas. Nuestro enfoque ético y tecnológico garantiza seguridad, eficiencia y atención centrada en el paciente en todo momento.</p>
+    </section>
+
+    <section class="info-section">
+        <h2>Testimonios</h2>
+        <p>¡MediBook ha sido una bendición para mi familia! La facilidad para programar citas y recibir recordatorios ha mejorado nuestra experiencia médica.<br><strong>Ana G.</strong></p>
+        <p>Estoy impresionado con la eficiencia de MediBook. Ahora puedo seguir mis tratamientos de forma organizada y sin olvidos.<br><strong>David L.</strong></p>
+        <p>¡Gracias a MediBook, gestionar las citas de mis pacientes nunca ha sido tan sencillo! Recomiendo esta plataforma a todos los profesionales de la salud.<br><strong>Dra. Marta R.</strong></p>
+    </section>
+
+    <section class="info-section">
+        <h2>Política de Privacidad</h2>
+        <p><strong>Última actualización:</strong> mayo 2025</p>
+        <p>En MediBook, respetamos tu privacidad. Recopilamos únicamente la información necesaria para brindarte un servicio eficiente y seguro. Tus datos están protegidos con medidas de seguridad robustas y nunca se comparten con terceros sin tu consentimiento explícito. Puedes ejercer tus derechos de acceso, rectificación o eliminación contactándonos.</p>
+    </section>
+
+    <section class="info-section">
+        <h2>Términos y Condiciones</h2>
+        <p><strong>Última actualización:</strong> mayo 2025</p>
+        <p>Al utilizar MediBook aceptas usar nuestros servicios de manera responsable. Nos reservamos el derecho de modificar las funcionalidades del sitio. No garantizamos disponibilidad ininterrumpida y no nos hacemos responsables de errores derivados del mal uso. El contenido de MediBook está protegido por derechos de autor.</p>
+    </section>
+
+    <section class="info-section">
+        <h2>Contacto</h2>
+        <p><strong>Teléfono:</strong> 123-456-7890</p>
+        <p><strong>Email:</strong> contacto@MediBook.com</p>
+        <p><strong>Dirección:</strong> Issste Tepeaca, Calle 8 Poniente, El Calvario, Tepeaca, Puebla, México</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Gestión de Citas Médicas | Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Preloader
+        window.addEventListener("load", function() {
+            document.getElementById("preloader").style.display = "none";
+        });
+    </script>
+</body>
+</html>

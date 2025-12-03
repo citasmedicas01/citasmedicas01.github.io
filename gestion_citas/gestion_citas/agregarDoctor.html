@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Doctor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Agregar Nuevo Doctor</h1>
+    <form action="agregar_doctor.php" method="POST" class="formulario">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Especialidad:</label>
+        <input type="text" name="especialidad" required>
+
+        <label>Consultorio:</label>
+        <input type="text" name="consultorio" required>
+
+        <label>Contraseña:</label>
+        <input type="password" name="contrasena" required>
+
+        <input type="submit" value="Registrar Doctor" class="button">
+    </form>
+</body>
+</html>

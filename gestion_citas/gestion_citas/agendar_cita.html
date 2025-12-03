@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Agendar Cita Médica</title>
+    <link rel="stylesheet" href="formulario.css" />
+</head>
+<body>
+    <header>
+        <h1>Agendar Cita Médica</h1>
+    </header>
+
+    <main class="contenedor">
+        <form action="agendar.php" method="POST" class="formulario">
+            <label for="nombre">Nombre del paciente:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="fecha">Fecha de la cita:</label>
+            <input type="date" name="fecha" id="fecha" required>
+
+            <label for="hora">Hora de la cita:</label>
+            <input type="time" name="hora" id="hora" required>
+
+            <label for="especialidad">Especialidad:</label>
+            <select name="especialidad" id="especialidad" required>
+                <option value="">-- Selecciona --</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Pediatría">Pediatría</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Medicina General">Medicina General</option>
+                <!-- Puedes agregar más según tu base de datos -->
+            </select>
+
+            <button type="submit" class="boton">Agendar Cita</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gestión de Citas Médicas</p>
+    </footer>
+</body>
+</html>
